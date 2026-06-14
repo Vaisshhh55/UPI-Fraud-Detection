@@ -36,22 +36,21 @@ Ctrl+Shift+B  # Select "Start All Services"
 
 ```bash
 # Terminal 1 - ML Service
-cd ml-service
-python app.py
+cd "D:\UPI fraud detection\ml-service"
+py -3 -m pip install -r requirements.txt
+py -3 app.py
 
 # Terminal 2 - Backend
-cd backend
-npm run start
+cd "D:\UPI fraud detection\backend"
+npm install
+npm start
 
 # Terminal 3 - Frontend
-cd frontend
+cd "D:\UPI fraud detection\frontend"
+npm install
 npm run dev
-```
 
-**Access the application:**
-- Frontend: http://localhost:5173
-- Backend API: http://localhost:5000
-- ML Service: http://localhost:5001
+
 
 ## Project Structure
 
